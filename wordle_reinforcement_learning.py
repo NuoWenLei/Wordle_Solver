@@ -459,6 +459,6 @@ class Wordle_Reinforcement_Learning():
 
 if __name__ == "__main__":
 	dict_path = "/Users/nuowenlei/Desktop/Programming/Python/Wordle_cuz_why_not/five_letter_words.json"
-	trish = Wordle_Reinforcement_Learning(dict_path, debug = False, archive = True, live_play = False, ultra_instinct = True, archive_num = 7)
+	trish = Wordle_Reinforcement_Learning(dict_path, debug = False, archive = True, live_play = False, ultra_instinct = True, archive_num = 1)
 	trish.live_play_ultra()
 

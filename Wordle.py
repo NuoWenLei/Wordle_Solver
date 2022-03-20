@@ -150,5 +150,5 @@ class Wordle():
 
 if __name__ == "__main__":
 	dict_path = "/Users/nuowenlei/Desktop/Programming/Python/Wordle_cuz_why_not/five_letter_words.json"
-	wordle = Wordle(6, dict_path, set_word = "witan")
+	wordle = Wordle(6, dict_path)
 	wordle.play_game()
