@@ -94,7 +94,8 @@ class Quordle_Reinforcement_Learning():
 					print(vocab.shape)
 					info_list = Quordle_Reinforcement_Learning.word_information(self.vocab, new_vocab_dist, state)
 					for i, info in enumerate(info_list):
-						full_info_list[i][1] += info[1]
+						full_info_list[i][1] += info[1] * vocab.shape[0]
+						# Scaling information to vocabulary size prioritizes game boards with more words to eliminate
 			
 			max_info_guesses = sorted(full_info_list, key = lambda x: x[1], reverse = True)
 			print([f"{Quordle_Reinforcement_Learning.to_word(w[0])}: {w[1]:.2f}" for w in max_info_guesses[0:10]])
