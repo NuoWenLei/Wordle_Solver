@@ -5,3 +5,5 @@ It solves Wordle.
 It solves Quordle.
 
 It solves Octordle.
+
+It solves Sedordle.
