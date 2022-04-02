@@ -1,10 +1,14 @@
 import json
+import requests
 
 def main():
 	dict_path = "/Users/nuowenlei/Desktop/Desktop - Old MacBook/School/Concord/G10_Sem1/Adv_CompSci/Eclipse Projects/14-Arrays/dictionary.txt"
 	save_path = "/Users/nuowenlei/Desktop/Programming/Python/Wordle_cuz_why_not/five_letter_words.json"
+
 	with open(dict_path, "r") as txt:
 		text = txt.readlines()
+
+	# text = r.text.split("\n")
 	
 	five_letter_words = [t.strip().lower() for t in text if len(t.strip()) == 5]
 
