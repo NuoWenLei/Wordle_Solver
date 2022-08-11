@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Word Embedding Data (Too large - 3GB)
+*.bin
+*.npy
